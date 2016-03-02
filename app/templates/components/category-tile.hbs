@@ -1,4 +1,6 @@
 <div>
-  <img src="{{category.image}}" alt="" />
-  {{category.category}}
+  {{#link-to 'junks' category.category}}
+    <img src="{{category.image}}" alt="categories" />
+    {{category.category}}
+  {{/link-to}}
 </div>
