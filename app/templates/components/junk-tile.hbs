@@ -21,6 +21,6 @@
         <h4>{{junk.description}}</h4>
       </div>
     </div>
-    <button class="btn btn-warning float-right">Buy</button>
+    <button {{action 'addToCart' junk}} class="btn btn-warning float-right">Buy</button>
   </div>
 {{/if}}

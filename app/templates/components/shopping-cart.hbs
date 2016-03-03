@@ -1,0 +1,10 @@
+{{#tooltip-on-parent}}
+    {{cartItems shoppingCart.items}}
+  {{/tooltip-on-parent}}
+<span class="glyphicon glyphicon-shopping-cart" id="shopping-cart"></span>
+
+{{#each shoppingCart.items as |item|}}
+  {{#tooltip-on-parent}}
+    {{cartItems shoppingCart.items}}
+  {{/tooltip-on-parent}}
+{{/each}}

@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  shoppingCart: Ember.inject.service(),
   isTitleShowed: false,
   isDescriptionShowed: false,
 
@@ -19,6 +20,10 @@ export default Ember.Component.extend({
 
     closePanel() {
       this.set('isDescriptionShowed', false);
+    },
+
+    addToCart(item) {
+      this.get('shoppingCart').add(item);
     },
   }
 });
