@@ -48,3 +48,35 @@ span.category-tile {
   // display: inline-block;
   vertical-align: middle;
 }
+
+.inline {
+  display: inline-block;
+}
+
+.description {
+  height: 100%;
+}
+
+span.glyphicon {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.description-panel {
+  img{
+  };
+  margin-top: 25%;
+  padding: 50px;
+  z-index:99;
+  background-color: rgba(150, 141, 141, 0.8);
+  position: absolute;
+}
+
+#shopping-cart {
+  color: #F0AD4E;
+}
+
+.float-right {
+  float: right;
+}

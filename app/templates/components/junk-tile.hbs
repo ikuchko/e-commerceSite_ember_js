@@ -1,8 +1,26 @@
 <div class="junk-tile">
-    <img src="{{junk.image}}" alt="{{junk.title}}" class="junk-image" />
+    <img src="{{junk.image}}" alt="{{junk.title}}" class="junk-image" {{action 'openDescription'}} />
     {{#if isTitleShowed}}
-      <div class="junk-description">
+      <div class="junk-description" {{action 'openDescription'}}>
         <h4>{{junk.title}}</h4>
       </div>
     {{/if}}
+
 </div>
+
+{{#if isDescriptionShowed}}
+  <div class="description-panel">
+    <span class="glyphicon glyphicon-remove float-right" {{action 'closePanel'}}></span>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{junk.image}}" alt="{{junk.title}}" class="junk-image"/>
+      </div>
+      <div class="col-md-6">
+        <h2>{{junk.title}}</h2>
+        <hr>
+        <h4>{{junk.description}}</h4>
+      </div>
+    </div>
+    <button class="btn btn-warning float-right">Buy</button>
+  </div>
+{{/if}}
