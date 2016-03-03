@@ -1,6 +1,10 @@
-<div>
+<div class="category-tile">
   {{#link-to 'junks' category.category}}
     <img src="{{category.image}}" alt="categories" />
-    {{category.category}}
+    {{#if isTitleShowed}}
+      <div class="category-description">
+        <span class="category-tile"><h1>{{category.category}}</h1></span>
+      </div>
+    {{/if}}
   {{/link-to}}
 </div>
