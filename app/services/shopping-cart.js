@@ -2,8 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
+  total: 0,
   add(item) {
-    this.get('items').pushObject(item)
-    console.log(this.get('items').length)
+    var total = parseInt(item.get('price')) + parseInt(this.get('total'));
+    console.log(item.get('price'));
+    this.set('total', total);
+    this.get('items').pushObject(item);
   },
 });

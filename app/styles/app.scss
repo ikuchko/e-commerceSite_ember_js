@@ -5,6 +5,8 @@
   float:left;
   margin: 10px;
   position: relative;
+  border: 1px dotted;
+  // padding: 5px;
 }
 
 .category-tile {
@@ -45,7 +47,6 @@ img {
 }
 
 span.category-tile {
-  // display: inline-block;
   vertical-align: middle;
 }
 
@@ -64,8 +65,7 @@ span.glyphicon {
 }
 
 .description-panel {
-  img{
-  };
+
   margin-top: 25%;
   padding: 50px;
   z-index:99;
@@ -77,6 +77,37 @@ span.glyphicon {
   color: #F0AD4E;
 }
 
+.junk-price {
+  width: 60px;
+  height: 50px;
+  background-color: rgba(150, 141, 141, 0.6);
+  position: absolute;
+  color: white;
+}
+
 .float-right {
   float: right;
+}
+
+.item-tile {
+  margin: 20px 0px;
+}
+
+.basket-image {
+  height: 60px;
+  width: auto;
+}
+
+.item-tile{
+  padding: 10px 30px;;
+  background-color: #DDD;
+}
+
+.backet {
+  margin-top: 10px;
+}
+
+#description-image {
+  height: 255px;
+  width: auto;
 }

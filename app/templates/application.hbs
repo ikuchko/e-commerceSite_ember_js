@@ -12,9 +12,15 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
+      {{#each model as |category|}}
+      {{log category.category}}
+        <li>{{#link-to 'junks' category.category}}{{category.category}}{{/link-to}}</li>
+      {{/each}}
+      </ul>
+      <span class="float-right backet">{{#link-to 'basket' }}{{shopping-cart items=shoppingCart.items}}{{/link-to}}</span>
+      <ul class="nav navbar-nav float-right">
         <li>{{#link-to 'admin' }}Admin{{/link-to}}</li>
       </ul>
-      <span class="float-right">{{#link-to 'admin' }}{{shopping-cart items=shoppingCart.items}}{{/link-to}}</span>
     </div>
   </div>
 </nav>

@@ -1,0 +1,18 @@
+{{#each shoppingCart.items as |junk|}}
+<div class="row">
+
+  <div class="col-md-7 item-tile">
+    <div class="basket-image inline">
+      <img src="{{junk.image}}" alt="{{junk.title}}" />
+    </div>
+    <div class="inline title">
+      <h4>{{junk.title}}</h4>
+    </div>
+    <div class="inline price float-right price">
+      <h3>{{junk.price}}</h3>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+<hr>

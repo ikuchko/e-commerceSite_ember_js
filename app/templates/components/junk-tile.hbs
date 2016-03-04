@@ -1,4 +1,7 @@
 <div class="junk-tile">
+  <div class="junk-price">
+    <h3>${{junk.price}}</h3>
+  </div>
     <img src="{{junk.image}}" alt="{{junk.title}}" class="junk-image" {{action 'openDescription'}} />
     {{#if isTitleShowed}}
       <div class="junk-description" {{action 'openDescription'}}>
@@ -12,7 +15,7 @@
   <div class="description-panel">
     <span class="glyphicon glyphicon-remove float-right" {{action 'closePanel'}}></span>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5 ">
         <img src="{{junk.image}}" alt="{{junk.title}}" class="junk-image"/>
       </div>
       <div class="col-md-6">
